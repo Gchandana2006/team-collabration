@@ -1,0 +1,8 @@
+app.post('/register', (req, res) => {
+  const { name, email, password } = req.body;
+
+  // Your logic to save data to database goes here
+
+  // ✅ Always respond with JSON
+  res.json({ message: 'User registered successfully' });
+});
